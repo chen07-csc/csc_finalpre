@@ -1,15 +1,36 @@
-# csc_finalpre
-I am working on a file backup checking task.
+Please create a simple Python desktop application using Tkinter
+to compare a source folder with a backup folder.
 
-Please write a Python script that compares a source folder with a backup folder and identifies files that exist in the source but are missing from the backup.
+Context:
+This is a small prototype inspired by a file housekeeping workflow.
+It will be tested using dummy files, not real business data.
 
 Requirements:
-1. Check all files in the source folder, including files in subfolders.
-2. Match files using their relative paths within the two folders.
-3. Generate a CSV report listing each missing file's relative path.
-4. If no files are missing, still create the report with a column header and clearly state that no missing files were found.
-5. If either folder does not exist, show a clear error message.
-6. Do not modify, copy, or delete any files in either folder.
-7. Use only Python standard-library packages.
 
-Please provide the complete code and explain how to run it and test it with a simple example.
+1. Allow the user to select a source folder and a backup folder.
+
+2. When the user clicks "Scan", recursively compare the files using
+   their relative paths.
+
+3. Display files that exist in the source folder but are missing
+   from the backup folder.
+
+4. Display the results clearly in the application, including:
+   - Relative file path
+   - Status
+
+5. Allow the user to export the results as a CSV file. Ask the user
+   where to save the report, and prevent the report from being saved
+   inside either selected folder.
+
+6. Show clear messages if folders are not selected, a folder cannot
+   be accessed, or no missing files are found.
+
+7. The application must only read and compare files. Do not copy,
+   move, modify, or delete any files.
+
+8. Use only the Python standard library. Provide the complete code
+   in one Python file, with brief instructions on how to run it.
+
+Please make the interface clear and professional, with a simple
+layout suitable for a business user.
